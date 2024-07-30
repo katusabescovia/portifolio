@@ -6,6 +6,7 @@
   <title>Portfolio Template</title>
 
   <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
@@ -55,23 +56,30 @@
       </ul>
     </div>
   </nav>
+
+<script>
+  function toggleMenu() {
+      var navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+  }
+  </script>
 </header>
 
 <!-- hero area -->
 <section class="hero-area bg-primary" id="parallax">
   <div class="container">
     <div class="row">
-      <div class="col-lg-11 mx-auto">
-        <h1 class="text-white font-tertiary">Hi! I’m <br> Scovia Katusabe  <br>  Software Developer</h1>
+      <div class="col-lg-11 mx-auto d-flex align-items-center">
+        <div>
+          <h2 class="text-white font-tertiary">Hi! I’m <br> Scovia Katusabe <br> Software Developer</h2>
+        </div>
+        <div class="mt-3 mt-md-0 ml-md-4">
+          <img src="images/abb.jpg" alt="Scovia Katusabe" class="img-fluid rounded-circle hero-img">
+        </div>
       </div>
     </div>
   </div>
-  
-  
-  
-  
 
-  
   
   <!-- social icon -->
   <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
@@ -89,7 +97,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
-        <p class="font-secondary paragraph-lg text-dark">I am passionate about technology and love learning new things. I enjoy challenges and strive for continuous improvement. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="font-secondary paragraph-lg text-dark">I am passionate about technology and love learning new things. I enjoy challenges and strive for continuous improvement. </p>
         <a href="about.html" class="btn btn-primary">Know More</a>
       </div>
     </div>
@@ -271,24 +279,17 @@
     </div>
   </div> -->
 </section>
-
-<h2 style="text-align: center;">My Projects</h2>
+<!-- /portfolio  -->
+<h2 class="section-title text-center">My Projects</h2>
 <section class="section">
-  
-        </div>
-      </div>
-    </div>
+  <div class="container">
     <div class="row shuffle-wrapper">
       <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;design&quot;,&quot;illustration&quot;]">
         <div class="position-relative rounded hover-wrapper">
           <img src="images/daycareimage.jpeg" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
-            <div class="hover-content" >
-               <p style="color:white; font-weight:bolder;">The Daystar Daycare Management System is a comprehensive application developed using Django. This system streamlines the process of managing daycare records, ensuring secure and efficient handling of children's information, attendance, billing, and communication with parents. 
-
-               </p>
-                
-              <p></p>
+            <div class="hover-content">
+               <p style="color:white; font-weight:bolder;">The Daystar Daycare Management System is a comprehensive application developed using Django. This system streamlines the process of managing daycare records, ensuring secure and efficient handling of children's information, attendance, billing, and communication with parents.</p>
             </div>
           </div>
         </div>
@@ -298,10 +299,7 @@
           <img src="images/pharmacyimage.jpeg" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <p style="color:white; font-weight:bolder;">Pharmacy Management System:
-                A comprehensive system for managing pharmacy sales and expenses, featuring inventory tracking, sales reporting, and customer management developed using Django and designed using bootstrap and some Javscripts. 
-
-              </p>
+              <p style="color:white; font-weight:bolder;">Pharmacy Management System: A comprehensive system for managing pharmacy sales and expenses, featuring inventory tracking, sales reporting, and customer management developed using Django and designed using Bootstrap and JavaScript.</p>
             </div>
           </div>
         </div>
@@ -311,27 +309,37 @@
           <img src="images/curtain.jpeg" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <p style="color:white; font-weight:bolder;">Curtains Website:
-                An elegant website showcasing a range of curtains with detailed product descriptions and high-quality images, integrating e-commerce functionalities developed using wordpress
-                </p>
-                
+              <p style="color:white; font-weight:bolder;">Curtains Website: An elegant website showcasing a range of curtains with detailed product descriptions and high-quality images, integrating e-commerce functionalities developed using WordPress.</p>
             </div>
           </div>
         </div>
       </div>
-     
-      </div> 
-      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]" style="margin-left:400px;">
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
         <div class="position-relative rounded hover-wrapper">
           <img src="images/portfolio/item-8.png" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
           <div class="hover-overlay">
             <div class="hover-content">
-              <a class="btn btn-light btn-sm" href="https://katusabescovia.github.io/bootstrap/">view project</a>
+              <a class="btn btn-light btn-sm" href="https://katusabescovia.github.io/bootstrap/">View Project</a>
             </div>
           </div>
         </div>
       </div>
-      
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;illustration&quot;]">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/art.webp" alt="portfolio-image" class="img-fluid rounded w-100 d-block">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <p style="color:white; font-weight:bolder;">E-commerce Management System: This project required me to build a software system to handle product listings,customer order,and payment processing for an online store
+                I managed to achieve this using Python and Django, HTML, and CSS, and then lastly JavaScript. For the database, I used an SQL server.
+                .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </section>
 <!-- /portfolio -->
 
