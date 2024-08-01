@@ -15,6 +15,46 @@ VERSION:	Versoin Number
   font-style: normal;
   font-display: swap;
 }
+ul .social-icon{
+    margin-right: 6px;
+    border-radius: 3px;
+    padding: 2px; /* Increased padding */
+    font-size: 25px; /* Increased icon size */
+}
+.list-unstyled{
+  /* text-align: center; */
+  
+}
+
+.list-unstyled li{
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.list-unstyled li:hover{
+  transform: translateY(-5px)
+}
+.social-icon.facebook {
+    background-color: #1877F2; /* Facebook blue */
+    /* margin-left: 5px; */
+}
+
+.social-icon.github {
+    background-color: #333; /* GitHub black */
+}
+
+.social-icon.linkedin {
+    background-color: #0077B5; /* LinkedIn blue */
+}
+
+.social-icon.twitter {
+    background-color: #1DA1F2; /* Twitter blue */
+}
+
+.social-icon i {
+    line-height:10px; /* Center icons vertically */
+}
+
 
 
 /* Responsive CSS for Projects */
@@ -314,16 +354,25 @@ a:hover {
 }
 
 .section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 
 
 .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   font-family: "BwNistaInt-xBd";
+  
 }
+/* .section-title:hover {
+  background-color: blue;
+  color: white; 
+  border: 1px solid #ccc;
+    border-radius: px;
+
+   */
+
 
 .bg-cover {
   background-size: cover;
@@ -332,7 +381,7 @@ a:hover {
 }
 .hero-img {
   max-width: 100%;
-  width: 300px; /* Adjust this size as needed */
+  width: 400px; /* Adjust this size as needed */
   height: auto;
   border: 2px solid #fff;
 }
@@ -392,7 +441,7 @@ a:hover {
 }
 
 .mb-20 {
-  margin-bottom: 20px !important;
+  margin-bottom: 10px !important;
 }
 
 .mb-30 {
@@ -534,7 +583,7 @@ textarea.form-control {
 
 /* /card */
 .navigation {
-  padding: 40px 130px;
+  padding: 40px 100px;
   transition: .3s ease;
 }
 
@@ -560,6 +609,7 @@ textarea.form-control {
   font-family: "BwNistaInt-xBd";
   text-transform: uppercase;
   padding: 15px;
+  
 }
 
 .navbar .nav-item.active {
@@ -569,9 +619,44 @@ textarea.form-control {
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
 }
+/* Base styles for navigation links */
+.navbar .nav-item .nav-link {
+  position: relative; /* Needed for the pseudo-element positioning */
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: "BwNistaInt-xBd";
+  font-weight: normal;
+  color: #fff;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Pseudo-element for the underline effect */
+.navbar .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px; /* Adjust this based on your link height */
+  width: 0;
+  height: 3px; /* Thickness of the underline */
+  background:  white; /* Color of the underline */
+  transition: width 0.3s ease; /* Smooth width transition */
+}
+
+/* Show the underline on hover or focus */
+.navbar .nav-item .nav-link:hover::after,
+.navbar .nav-item .nav-link:focus::after {
+  width: 100%;
+}
+
+/* Change link color on hover */
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus {
+  color:whitesmoke;  /* Change text color on hover/focus */
+}
+
 
 .hero-area {
-  padding: 300px 0 200px;
+  padding: 150px 0 100px;
   position: relative;
 }
 
@@ -740,7 +825,7 @@ textarea.form-control {
 }
 
 .hover-shadow:hover {
-  box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+  box-shadow: 0px 18px 40px 8px rgba(178, 198, 215, 0.54) !important;
 }
 
 /* /service */
@@ -841,7 +926,8 @@ textarea.form-control {
 /* /testimonial */
 /* footer */
 .footer-section {
-  padding-top: 200px;
+  padding-top: 250px;
+  /* margin-top: 20px; */
 }
 
 .section-on-footer {
@@ -898,7 +984,8 @@ blockquote {
 }
 
 .page-title-alt {
-  padding: 350px 0 70px;
+  padding: 150px 0 70px;
+
 }
 
 .border-thick {
@@ -959,7 +1046,7 @@ blockquote {
 }
 
 .page-title {
-  padding: 250px 0 150px;
+  padding: 100px 0 70px;
 }
 
 .page-title .container {
